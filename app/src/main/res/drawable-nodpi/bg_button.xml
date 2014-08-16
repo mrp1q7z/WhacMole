@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- ボタンが押されている -->
+    <!-- フォーカスされていない -->
+    <item android:state_pressed="true"
+        android:state_focused="false">
+        <layer-list>
+            <item android:drawable="@drawable/btn_push" />
+        </layer-list>
+    </item>
+
+    <!-- ボタンが押されていない -->
+    <!-- フォーカスされていない -->
+    <item android:state_pressed="false"
+        android:state_focused="false">
+        <layer-list>
+            <item android:drawable="@drawable/hole" />
+        </layer-list>
+    </item>
+
+    <!-- ボタンが押されている -->
+    <!-- フォーカスされた -->
+    <item android:state_pressed="true"
+        android:state_focused="true">
+        <layer-list>
+            <item android:drawable="@drawable/btn_push" />
+        </layer-list>
+    </item>
+
+    <!-- ボタンが押されていない -->
+    <!-- フォーカスされた -->
+    <item android:state_pressed="false"
+        android:state_focused="true">
+        <layer-list>
+            <item android:drawable="@drawable/hole" />
+        </layer-list>
+    </item>
+
+</selector>
